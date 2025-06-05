@@ -1,29 +1,40 @@
 {
-  "name": "ecommerce-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "ecommerce",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "cookie": "^0.6.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.6.0",
+    "axios": "^1.7.9",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.5.1",
+    "dotenv": "^16.5.0",
+    "js-cookie": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.3.0",
-    "mongoose": "^8.0.4",
-    "morgan": "^1.10.0",
-    "nodemailer": "^6.9.8"
+    "lucide-react": "^0.474.0",
+    "mongodb": "^6.13.1",
+    "mongoose": "^8.10.1",
+    "next": "15.1.6",
+    "next-cloudinary": "^6.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2",
+    "stripe": "^17.6.0",
+    "universal-cookie": "^7.2.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "@eslint/eslintrc": "^3",
+    "@types/node": "22.13.1",
+    "@types/react": "19.0.8",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
